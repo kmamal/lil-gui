@@ -1,0 +1,30 @@
+{
+  "version": "0.0.0",
+  "name": "@kmamal/lil-gui",
+  "description": "The lil-gui API in SDL windows for Node.js",
+  "keywords": [
+    "lil-gui",
+    "gui",
+    "sdl"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kmamal/lil-gui.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test --test-timeout=60000 tests"
+  },
+  "dependencies": {
+    "@kmamal/sdl": ">=1.0.0-3",
+    "@napi-rs/canvas": "1.0.10"
+  }
+}
